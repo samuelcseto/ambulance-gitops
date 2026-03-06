@@ -5,6 +5,9 @@ metadata:
 spec:
     microFrontend: scs-ambulance-ufe
     element: scs-ambulance-wl-app
+    attributes:
+        - name: base-path
+          value: ./scs-ambulance-wl/
     displayRules:
         - allOf:
               - context-name: main-content
