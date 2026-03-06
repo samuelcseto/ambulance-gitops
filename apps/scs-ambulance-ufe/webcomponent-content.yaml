@@ -4,7 +4,7 @@ metadata:
     name: scs-ambulance-ufe-content
 spec:
     microFrontend: scs-ambulance-ufe
-    element: scs-ambulance-wl-list
+    element: scs-ambulance-wl-app
     displayRules:
         - allOf:
               - context-name: main-content
