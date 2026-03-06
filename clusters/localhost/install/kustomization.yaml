@@ -10,3 +10,6 @@ labels:
 
 resources:
     - ../../../apps/scs-ambulance-ufe
+
+components:
+    - ../../../components/version-developers
