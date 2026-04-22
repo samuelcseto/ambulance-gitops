@@ -7,3 +7,4 @@ spec:
     service:
         name: scs-ambulance-ufe # referencia na službu odkiaľ sa má načítať modul
     modulePath: build/ambulance-ufe.esm.js # cesta v rámci služby kde sa modul nachádza
+    cacheBustingHash: v1alpha1 # mení sa pri release na hodnotu image tagu (cache busting)

@@ -1,0 +1,11 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+    name: scs-gitops-repo
+    namespace: wac-hospital
+spec:
+    interval: 1m0s
+    ref:
+        branch: main
+    timeout: 1m0s
+    url: https://github.com/samuelcseto/ambulance-gitops

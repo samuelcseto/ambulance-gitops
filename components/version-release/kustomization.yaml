@@ -1,0 +1,25 @@
+apiVersion: kustomize.config.k8s.io/v1alpha1
+kind: Component
+
+images:
+    - name: samuelcseto/ambulance-ufe
+      newName: samuelcseto/ambulance-ufe
+      newTag: "1.0.0"
+
+replacements:
+    - targets:
+          - select:
+                group: polyfea.github.io
+                version: v1alpha1
+                kind: MicroFrontend
+                name: scs-ambulance-ufe
+            fieldPaths:
+                - spec.cacheBustingHash
+      source:
+          version: v1
+          kind: Deployment
+          name: scs-ambulance-ufe-deployment
+          fieldPath: spec.template.spec.containers.0.image
+          options:
+              delimiter: ":"
+              index: 1
