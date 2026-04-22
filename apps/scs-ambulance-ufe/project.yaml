@@ -9,4 +9,4 @@ spec:
     frontendRepoUrl: https://github.com/samuelcseto/ambulance-ufe
     backendRepoUrl: https://github.com/samuelcseto/ambulance-webapi
     gitopsRepoUrl: https://github.com/samuelcseto/ambulance-gitops
-    azureLink: https://wac-hospital.westeurope.cloudapp.azure.com/fea/scs-ambulance-wl
+    azureLink: https://scs-ambulance-byh8eud4dpgzhyhz.westeurope-01.azurewebsites.net
