@@ -12,3 +12,6 @@ resources:
 labels:
     - pairs:
           app.kubernetes.io/component: scs-ambulance-ufe
+          app.kubernetes.io/name: scs-ambulance-wl
+          wac-fiit.github.io/component: frontend
+          wac-fiit.github.io/project: scs-ambulance-wl
