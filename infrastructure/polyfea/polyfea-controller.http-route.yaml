@@ -11,7 +11,7 @@ spec:
         - matches:
               - path:
                     type: PathPrefix
-                    value: /ui
+                    value: /fea
           backendRefs:
               - group: ""
                 kind: Service
@@ -27,7 +27,7 @@ spec:
                 requestRedirect:
                     path:
                         type: ReplaceFullPath
-                        replaceFullPath: /ui
+                        replaceFullPath: /fea/
 ---
 apiVersion: gateway.networking.k8s.io/v1beta1
 kind: ReferenceGrant
