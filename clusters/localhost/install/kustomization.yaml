@@ -12,6 +12,7 @@ resources:
     - ../../../apps/scs-ambulance-ufe
     - ../../../apps/scs-ambulance-webapi
     - ../../../apps/mongo-express
+    - ../../../apps/http-echo
 
 components:
     - ../../../components/version-developers
@@ -19,3 +20,4 @@ components:
 
 patches:
     - path: patches/ambulance-webapi.service.yaml
+    - path: patches/mongodb-auth.secret.yaml
