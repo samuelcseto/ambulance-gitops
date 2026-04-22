@@ -4,7 +4,10 @@ kind: Component
 images:
     - name: samuelcseto/ambulance-ufe
       newName: samuelcseto/ambulance-ufe
-      newTag: "1.0.0"
+      newTag: "1.1.0"
+    - name: samuelcseto/ambulance-wl-webapi
+      newName: samuelcseto/ambulance-wl-webapi
+      newTag: "1.1.0"
 
 replacements:
     - targets:
