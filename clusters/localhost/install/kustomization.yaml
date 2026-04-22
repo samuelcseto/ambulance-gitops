@@ -11,6 +11,7 @@ labels:
 resources:
     - ../../../apps/scs-ambulance-ufe
     - ../../../apps/scs-ambulance-webapi
+    - ../../../apps/mongo-express
 
 components:
     - ../../../components/version-developers
