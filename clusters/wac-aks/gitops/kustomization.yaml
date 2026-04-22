@@ -5,6 +5,7 @@ labels:
     - pairs:
           app.kubernetes.io/part-of: wac-hospital
           app.kubernetes.io/name: scs-ambulance-wl
+          wac-fiit.github.io/project: scs-ambulance-wl
 
 namespace: wac-hospital
 
