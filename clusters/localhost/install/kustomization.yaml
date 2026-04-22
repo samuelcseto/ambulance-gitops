@@ -10,6 +10,11 @@ labels:
 
 resources:
     - ../../../apps/scs-ambulance-ufe
+    - ../../../apps/scs-ambulance-webapi
 
 components:
     - ../../../components/version-developers
+    - https://github.com/samuelcseto/ambulance-webapi//deployments/kustomize/components/mongodb
+
+patches:
+    - path: patches/ambulance-webapi.service.yaml

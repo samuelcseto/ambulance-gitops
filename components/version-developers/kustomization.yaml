@@ -4,3 +4,6 @@ images:
 - name: samuelcseto/ambulance-ufe
   newName: samuelcseto/ambulance-ufe # {"$imagepolicy":  "wac-hospital:ambulance-ufe:name"}
   newTag: main.20260306.2000 # {"$imagepolicy": "wac-hospital:ambulance-ufe:tag"}
+- name: samuelcseto/ambulance-wl-webapi
+  newName: samuelcseto/ambulance-wl-webapi # {"$imagepolicy":  "wac-hospital:ambulance-webapi:name"}
+  newTag: main # {"$imagepolicy": "wac-hospital:ambulance-webapi:tag"}
