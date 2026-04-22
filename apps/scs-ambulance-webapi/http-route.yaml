@@ -1,0 +1,50 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+    name: scs-ambulance-webapi
+spec:
+    parentRefs:
+        - name: wac-hospital-gateway
+          namespace: wac-hospital
+        - name: wac-hospital-gateway
+          namespace: wac-hospital-system
+    rules:
+        - matches:
+              - path:
+                    type: PathPrefix
+                    value: /scs-api
+          filters:
+              - type: URLRewrite
+                urlRewrite:
+                    path:
+                        type: ReplacePrefixMatch
+                        replacePrefixMatch: /api
+          backendRefs:
+              - group: ""
+                kind: Service
+                name: scs-ambulance-webapi
+                port: 80
+        - matches:
+              - path:
+                    type: PathPrefix
+                    value: /scs-openapi-ui
+          backendRefs:
+              - group: ""
+                kind: Service
+                name: scs-openapi-ui
+                port: 80
+        - matches:
+              - path:
+                    type: Exact
+                    value: /scs-openapi
+          filters:
+              - type: URLRewrite
+                urlRewrite:
+                    path:
+                        type: ReplaceFullPath
+                        replaceFullPath: /openapi
+          backendRefs:
+              - group: ""
+                kind: Service
+                name: scs-ambulance-webapi
+                port: 80
