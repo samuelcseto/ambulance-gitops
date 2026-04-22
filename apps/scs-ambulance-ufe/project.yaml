@@ -1,0 +1,12 @@
+apiVersion: wac-fiit.github.io/v1alpha1
+kind: Project
+metadata:
+    name: scs-ambulance-wl
+spec:
+    title: Zoznam čakajúcich scs
+    description: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
+    authors: Samuel Cseto
+    frontendRepoUrl: https://github.com/samuelcseto/ambulance-ufe
+    backendRepoUrl: https://github.com/samuelcseto/ambulance-webapi
+    gitopsRepoUrl: https://github.com/samuelcseto/ambulance-gitops
+    azureLink: https://wac-hospital.westeurope.cloudapp.azure.com/fea/scs-ambulance-wl
